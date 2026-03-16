@@ -1,4 +1,4 @@
-# LeadFlow CRM 🚀
+# CRM 🚀
 
 > CRM complet de gestion des leads commerciaux — React + Express + MySQL + JWT
 
