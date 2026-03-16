@@ -1,0 +1,19 @@
+# ── MySQL ─────────────────────────────────────────────────────────────────────
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=TON_MOT_DE_PASSE_MYSQL
+DB_NAME=leadflow_crm
+
+# ── Serveur ───────────────────────────────────────────────────────────────────
+PORT=3001
+CLIENT_URL=http://localhost:8081
+
+# ── JWT ───────────────────────────────────────────────────────────────────────
+# Change JWT_SECRET par une chaîne longue et aléatoire en production !
+JWT_SECRET=leadflow_super_secret_jwt_2024
+JWT_EXPIRES=8h
+
+# ── Admin ─────────────────────────────────────────────────────────────────────
+ADMIN_EMAIL=admin@leadflow.com
+ADMIN_PASSWORD=Admin1234!
