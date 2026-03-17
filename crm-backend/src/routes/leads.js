@@ -53,7 +53,7 @@ router.get("/", async (req, res, next) => {
 
     const [leads] = await pool.execute(sql, params);
 
-    // Récupère toutes les notes en une seule requête
+    
     let notes = [];
     if (leads.length > 0) {
       const ids = leads.map(() => "?").join(",");
@@ -64,7 +64,7 @@ router.get("/", async (req, res, next) => {
       notes = rows;
     }
 
-    // Associe les notes à chaque lead
+    
     const result = leads.map((lead) =>
       formatLead(lead, notes.filter((n) => n.lead_id === lead.id))
     );
@@ -89,7 +89,7 @@ router.get("/stats", async (req, res, next) => {
 
     const total     = parseInt(totals.total);
     const nouveau   = parseInt(totals.nouveau);
-    const contacte  = parseInt(totals.contacte);  // clé JS sans accent pour éviter les surprises
+    const contacte  = parseInt(totals.contacte);  
     const converti  = parseInt(totals.converti);
     const conversionRate = total > 0 ? Math.round((converti / total) * 100) : 0;
 
@@ -98,7 +98,7 @@ router.get("/stats", async (req, res, next) => {
       data: {
         total,
         nouveau,
-        "contacté": contacte,   // on garde l'accent pour correspondre au front
+        "contacté": contacte,  
         converti,
         conversionRate,
       },

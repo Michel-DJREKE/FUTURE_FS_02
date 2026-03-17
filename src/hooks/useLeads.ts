@@ -1,7 +1,4 @@
-/**
- * useLeads — version avec authentification JWT
- * Chaque requête envoie le token dans Authorization: Bearer <token>
- */
+
 import { useState, useCallback, useMemo, useEffect } from "react";
 import { Lead, LeadStatus, LeadSource } from "@/types/lead";
 

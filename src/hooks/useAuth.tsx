@@ -1,8 +1,4 @@
-/**
- * useAuth — gestion de l'authentification admin
- * Stocke le token JWT dans localStorage
- * Expose : login, logout, token, admin, isAuthenticated, loading
- */
+
 import { useState, useEffect, useCallback, createContext, useContext, ReactNode } from "react";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
@@ -51,7 +47,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       .finally(() => setLoading(false));
   }, []);
 
-  // ── Login ────────────────────────────────────────────────────────────────
+  // ── Login ────────
   const login = useCallback(async (
     email: string,
     password: string
@@ -77,7 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  // ── Logout ───────────────────────────────────────────────────────────────
+  // ── Logout ─────────
   const logout = useCallback(() => {
     localStorage.removeItem(TOKEN_KEY);
     setToken(null);

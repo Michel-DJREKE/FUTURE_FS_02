@@ -12,6 +12,7 @@ async function init() {
 
   const db = process.env.DB_NAME || "leadflow_crm";
 
+
   console.log(`🔧 Création de la base "${db}"…`);
 
   await conn.query(`CREATE DATABASE IF NOT EXISTS \`${db}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`);

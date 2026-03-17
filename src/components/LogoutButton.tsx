@@ -1,12 +1,4 @@
-/**
- * Bouton de déconnexion — à ajouter dans le header de Index.tsx
- *
- * Import :
- *   import { LogoutButton } from "@/components/LogoutButton";
- *
- * Usage dans le header :
- *   <LogoutButton />
- */
+
 import { useAuth } from "@/hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import { LogOut } from "lucide-react";
