@@ -332,20 +332,6 @@ GET /api/health → { "status": "ok", "timestamp": "..." }
 
 ---
 
-## ☁️ Déploiement
-
-### Backend → Railway
-
-1. Crée un compte sur [railway.app](https://railway.app)
-
-### Frontend → Vercel
-
-1. Crée un compte sur [vercel.com](https://vercel.com)
-### Après déploiement
-
-Mets à jour `CLIENT_URL` dans Railway avec l'URL Vercel, puis redéploie le backend.
-
----
 
 ## 👤 Auteur
 
